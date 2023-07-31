@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.oop;
 
 /**
  * 乐器类
