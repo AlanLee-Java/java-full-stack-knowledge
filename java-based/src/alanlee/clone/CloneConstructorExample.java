@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.clone;
 
 /**
  * 拷贝构造函数
