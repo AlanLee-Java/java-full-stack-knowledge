@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.clone;
 
 /**
  * 浅拷贝
