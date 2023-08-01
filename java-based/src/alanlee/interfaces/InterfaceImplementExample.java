@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.interfaces;
 
 /**
  * 接口实现类

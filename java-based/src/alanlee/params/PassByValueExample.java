@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.params;
 
 /**
  * 参数传递：Java 的参数是以值传递的形式传入方法中，而不是引用传递。
@@ -14,6 +14,7 @@ public class PassByValueExample {
     }
 
     private static void func(Dog dog) {
+        //dog.setName("B");
         System.out.println(dog.getObjectAddress()); // Dog@4554617c
         dog = new Dog("B");
         System.out.println(dog.getObjectAddress()); // Dog@74a14482

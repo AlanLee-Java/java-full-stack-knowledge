@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.abstracts;
 
 /**
  * 抽象类子类

@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.params;
 
 public class Dog {
 
