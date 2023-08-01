@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.supers;
 
 public class SuperExample {
 
