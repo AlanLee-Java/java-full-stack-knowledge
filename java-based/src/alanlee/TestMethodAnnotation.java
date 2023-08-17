@@ -1,5 +1,7 @@
 package alanlee;
 
+import alanlee.annotations.MyMethodAnnotation;
+
 import java.io.FileNotFoundException;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
@@ -42,16 +44,13 @@ public class TestMethodAnnotation {
                     try {
                         // 获取并遍历方法上的所有注解
                         for (Annotation anno : method.getDeclaredAnnotations()) {
-                            System.out.println("Annotation in Method '"
-                                    + method + "' : " + anno);
+                            System.out.println("Annotation in Method '" + method + "' : " + anno);
                         }
 
                         // 获取MyMethodAnnotation对象信息
-                        MyMethodAnnotation methodAnno = method
-                                .getAnnotation(MyMethodAnnotation.class);
+                        MyMethodAnnotation methodAnno = method.getAnnotation(MyMethodAnnotation.class);
 
                         System.out.println(methodAnno.title());
-
                     } catch (Throwable ex) {
                         ex.printStackTrace();
                     }
