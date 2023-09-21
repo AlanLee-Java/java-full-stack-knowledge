@@ -17,7 +17,7 @@ public class LockExample {
     public void func() {
         lock.lock();
         try {
-            for (int i = 0; i < 10; i++) {
+            for (int i = 0; i < 100; i++) {
                 System.out.print(i + " ");
             }
         } finally {
