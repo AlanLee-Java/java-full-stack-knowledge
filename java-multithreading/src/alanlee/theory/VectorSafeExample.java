@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.theory;
 
 import java.util.Vector;
 import java.util.concurrent.ExecutorService;
@@ -10,7 +10,7 @@ import java.util.concurrent.Executors;
  * @author AlanLee
  * @date 2022-11-11
  */
-public class VectorUnsafeExample {
+public class VectorSafeExample {
 
     private static Vector<Integer> vector = new Vector<>();
 
@@ -21,13 +21,17 @@ public class VectorUnsafeExample {
             }
             ExecutorService executorService = Executors.newCachedThreadPool();
             executorService.execute(() -> {
-                for (int i = 0; i < vector.size(); i++) {
-                    vector.remove(i);
+                synchronized (vector) {
+                    for (int i = 0; i < vector.size(); i++) {
+                        vector.remove(i);
+                    }
                 }
             });
             executorService.execute(() -> {
-                for (int i = 0; i < vector.size(); i++) {
-                    vector.get(i);
+                synchronized (vector) {
+                    for (int i = 0; i < vector.size(); i++) {
+                        vector.get(i);
+                    }
                 }
             });
             executorService.shutdown();

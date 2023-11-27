@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.theory;
 
 /**
  * 无同步方案：线程本地存储(Thread Local Storage)

@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.theory;
 
 /**
  * ThreadLocal理解
@@ -15,14 +15,14 @@ public class ThreadLocalExample1 {
         Thread thread1 = new Thread(() -> {
             threadLocal1.set(1);
             threadLocal2.set(1);
-            System.out.println(threadLocal1.get());
-            System.out.println(threadLocal2.get());
+            System.out.println(Thread.currentThread().getName() + ":" + threadLocal1.get());
+            System.out.println(Thread.currentThread().getName() + ":" + threadLocal2.get());
         });
         Thread thread2 = new Thread(() -> {
             threadLocal1.set(2);
             threadLocal2.set(2);
-            System.out.println(threadLocal1.get());
-            System.out.println(threadLocal2.get());
+            System.out.println(Thread.currentThread().getName() + ":" + threadLocal1.get());
+            System.out.println(Thread.currentThread().getName() + ":" + threadLocal2.get());
         });
         thread1.start();
         thread2.start();
