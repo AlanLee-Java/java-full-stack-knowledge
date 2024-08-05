@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.oop;
 
 /**
  * 封装：利用抽象数据类型将数据和基于数据的操作封装在一起，使其构成一个不可分割的独立实体。

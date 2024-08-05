@@ -1,8 +1,6 @@
 package alanlee.generics;
 
-import alanlee.Person;
-
-import java.util.Objects;
+import alanlee.oop.Person;
 
 /**
  * 泛型方法
@@ -19,7 +17,7 @@ public class GenericsMethod {
 
     public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
         GenericsMethod genericsMethod = new GenericsMethod();
-        Object obj = genericsMethod.getObject(Class.forName("alanlee.Person"));
+        Object obj = genericsMethod.getObject(Class.forName("alanlee.oop.Person"));
         Person person = (Person) obj;
         person.setName("AlanLee");
         person.work();

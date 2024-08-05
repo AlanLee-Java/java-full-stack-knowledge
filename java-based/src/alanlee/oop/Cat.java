@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.oop;
 
 /**
  * 继承：继承实现了 IS-A 关系，例如 Cat 和 Animal 就是一种 IS-A 关系，因此 Cat 可以继承自 Animal，从而获得 Animal 非 private 的属性和方法。
