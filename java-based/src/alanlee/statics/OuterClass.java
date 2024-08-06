@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.statics;
 
 public class OuterClass {
 
