@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.equals;
 
 import java.util.HashSet;
 
