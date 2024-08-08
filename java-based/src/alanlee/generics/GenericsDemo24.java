@@ -21,6 +21,7 @@ interface Info<T> {        // 在接口上定义泛型
 }
 
 class InfoImpl<T> implements Info<T> {   // 定义泛型接口的子类
+
     private T var;             // 定义属性
 
     public InfoImpl(T var) {     // 通过构造方法设置属性内容
@@ -34,4 +35,5 @@ class InfoImpl<T> implements Info<T> {   // 定义泛型接口的子类
     public T getVar() {
         return this.var;
     }
+
 }
