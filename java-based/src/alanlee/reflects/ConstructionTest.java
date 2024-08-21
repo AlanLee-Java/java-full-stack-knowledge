@@ -137,4 +137,5 @@ class ConstructionUser {
                 ", name='" + name + '\'' +
                 '}';
     }
+
 }
