@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.exceptions;
 
 public class ExceptionTest {
 
