@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.basics;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -17,7 +17,7 @@ public class LockExample {
     public void func() {
         lock.lock();
         try {
-            for (int i = 0; i < 100; i++) {
+            for (int i = 0; i < 10; i++) {
                 System.out.print(i + " ");
             }
         } finally {

@@ -1,6 +1,4 @@
-package alanlee;
-
-import alanlee.annotations.MyMethodAnnotation;
+package alanlee.annotations;
 
 import java.io.FileNotFoundException;
 import java.lang.annotation.Annotation;
@@ -34,7 +32,7 @@ public class TestMethodAnnotation {
         try {
             // 获取所有methods
             Method[] methods = TestMethodAnnotation.class.getClassLoader()
-                    .loadClass(("alanlee.TestMethodAnnotation"))
+                    .loadClass(("alanlee.annotations.TestMethodAnnotation"))
                     .getMethods();
 
             // 遍历

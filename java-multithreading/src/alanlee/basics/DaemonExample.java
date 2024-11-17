@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.basics;
 
 /**
  * 守护线程是程序运行时在后台提供服务的线程，不属于程序中不可或缺的部分。

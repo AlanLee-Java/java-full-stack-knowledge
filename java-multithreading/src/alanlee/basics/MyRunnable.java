@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.basics;
 
 /**
  * 实现 Runnable 接口

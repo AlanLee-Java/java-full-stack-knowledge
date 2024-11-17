@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.basics;
 
 /**
  * 当多个线程可以一起工作去解决某个问题时，如果某些部分必须在其它部分之前完成，那么就需要对线程进行协调。
