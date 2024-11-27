@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.synchronizeds;
 
 public class SynchronizedObjectLock4 implements Runnable{
 

@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.synchronizeds;
 
 /**
  * synchronized指定锁对象为Class对象

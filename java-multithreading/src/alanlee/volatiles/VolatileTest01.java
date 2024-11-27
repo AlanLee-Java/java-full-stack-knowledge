@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.volatiles;
 
 /**
  * 对于原子性，需要强调一点，也是大家容易误解的一点：

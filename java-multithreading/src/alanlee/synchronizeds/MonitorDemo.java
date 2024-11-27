@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.synchronizeds;
 
 /**
  * 保证可见性的原理：内存模型和happens-before规则

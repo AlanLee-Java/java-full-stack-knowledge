@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.volatiles;
 
 /**
  * 双重检查加锁

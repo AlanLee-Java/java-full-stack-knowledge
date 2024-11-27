@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.volatiles;
 
 public class Test {
 

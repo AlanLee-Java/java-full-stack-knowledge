@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.synchronizeds;
 
 /**
  * Synchronized原理分析

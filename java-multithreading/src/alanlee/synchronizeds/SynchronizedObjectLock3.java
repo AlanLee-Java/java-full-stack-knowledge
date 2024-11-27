@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.synchronizeds;
 
 /**
  * 类锁

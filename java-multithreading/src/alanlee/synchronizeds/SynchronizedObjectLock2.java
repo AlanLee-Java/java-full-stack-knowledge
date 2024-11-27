@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.synchronizeds;
 
 /**
  * 方法锁形式：synchronized修饰普通方法，锁对象默认为this
