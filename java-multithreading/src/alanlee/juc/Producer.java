@@ -1,27 +1,29 @@
-package alanlee;
+package alanlee.juc;
 
 import java.util.concurrent.BlockingQueue;
 
 /**
- * 消费线程
+ * 生产线程
  *
  * @author AlanLee
  * @date 2022-11-21
  */
-public class Consumer implements Runnable {
+public class Producer implements Runnable {
 
     protected BlockingQueue queue = null;
 
-    public Consumer(BlockingQueue queue) {
+    public Producer(BlockingQueue queue) {
         this.queue = queue;
     }
 
     @Override
     public void run() {
         try {
-            System.out.println(queue.take());
-            System.out.println(queue.take());
-            System.out.println(queue.take());
+            queue.put("1");
+            Thread.sleep(1000);
+            queue.put("2");
+            Thread.sleep(1000);
+            queue.put("3");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

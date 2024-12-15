@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.juc;
 
 import java.util.concurrent.*;
 
@@ -16,7 +16,8 @@ public class WorkerPool {
         //Get the ThreadFactory implementation to use
         ThreadFactory threadFactory = Executors.defaultThreadFactory();
         //creating the ThreadPoolExecutor
-        ThreadPoolExecutor executorPool = new ThreadPoolExecutor(2, 4, 10, TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(2), threadFactory, rejectionHandler);
+        ThreadPoolExecutor executorPool = new ThreadPoolExecutor(2, 4, 10, TimeUnit.SECONDS,
+                new ArrayBlockingQueue<Runnable>(2), threadFactory, rejectionHandler);
         //start the monitoring thread
         MyMonitorThread monitor = new MyMonitorThread(executorPool, 3);
         Thread monitorThread = new Thread(monitor);
