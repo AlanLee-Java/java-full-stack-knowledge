@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.juc;
 
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveTask;
