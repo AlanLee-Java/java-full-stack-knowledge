@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.bio;
 
 
 import java.io.IOException;
