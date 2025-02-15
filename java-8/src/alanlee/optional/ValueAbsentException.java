@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.optional;
 
 public class ValueAbsentException extends Throwable {
 
