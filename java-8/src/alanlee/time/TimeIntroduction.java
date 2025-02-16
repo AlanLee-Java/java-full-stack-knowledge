@@ -1,4 +1,4 @@
-package alanlee;
+package alanlee.time;
 
 import java.time.*;
 import java.time.chrono.ChronoLocalDateTime;
@@ -112,6 +112,7 @@ public class TimeIntroduction {
         System.out.printf("Days in month year %s: %d%n", currentYearMonth, currentYearMonth.lengthOfMonth());
         YearMonth creditCardExpiry = YearMonth.of(2018, Month.FEBRUARY);
         System.out.printf("Your credit card expires on %s %n", creditCardExpiry);
+        System.out.println(currentYearMonth.equals(creditCardExpiry));
 
         // 判断闰年 - LocalDate类有一个isLeapYear()的方法
         System.out.println(dateOfBirth.isLeapYear());
