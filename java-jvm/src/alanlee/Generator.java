@@ -8,6 +8,12 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
+/**
+ * 利用ASM实现AOP
+ *
+ * @author AlanLee
+ * @date 2025-02-21
+ */
 public class Generator {
 
     public static void main(String[] args) throws IOException {
@@ -19,7 +25,7 @@ public class Generator {
         classReader.accept(classVisitor, ClassReader.SKIP_DEBUG);
         byte[] data = classWriter.toByteArray();
         //输出
-        File f = new File("D:\\githubProjects\\java-full-stack-knowledge\\java-jvm\\src\\alanlee");
+        File f = new File("D:\\myProjects\\java-full-stack-knowledge\\out\\production\\java-jvm\\alanlee\\Base.class");
         FileOutputStream fout = new FileOutputStream(f);
         fout.write(data);
         fout.close();

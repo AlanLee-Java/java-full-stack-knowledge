@@ -2,6 +2,12 @@ package alanlee;
 
 import java.io.*;
 
+/**
+ * 自定义类加载器
+ *
+ * @author AlanLee
+ * @date 2025-02-21
+ */
 public class MyClassLoader extends ClassLoader {
 
     private String root;
@@ -44,7 +50,7 @@ public class MyClassLoader extends ClassLoader {
 
     public static void main(String[] args) {
         MyClassLoader classLoader = new MyClassLoader();
-        classLoader.setRoot("D:\\temp");
+        classLoader.setRoot("D:\\myProjects\\java-full-stack-knowledge\\java-jvm\\src");
 
         Class<?> testClass = null;
         try {

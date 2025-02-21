@@ -1,6 +1,12 @@
 package alanlee;
 
-public class loaderTest {
+/**
+ * 类加载有三种方式
+ *
+ * @author AlanLee
+ * @date 2025-02-21
+ */
+public class LoaderTest {
 
     public static void main(String[] args) throws ClassNotFoundException {
         ClassLoader loader = Thread.currentThread().getContextClassLoader();

@@ -4,6 +4,12 @@ import jdk.internal.org.objectweb.asm.ClassVisitor;
 import jdk.internal.org.objectweb.asm.MethodVisitor;
 import jdk.internal.org.objectweb.asm.Opcodes;
 
+/**
+ * 用于对字节码的观察
+ *
+ * @author AlanLee
+ * @date 2025-02-21
+ */
 public class MyClassVisitor extends ClassVisitor implements Opcodes {
 
     public MyClassVisitor(ClassVisitor cv) {
