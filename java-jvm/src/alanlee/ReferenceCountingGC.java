@@ -1,5 +1,11 @@
 package alanlee;
 
+/**
+ * 引用计数算法
+ *
+ * @author AlanLee
+ * @date 2025-02-25
+ */
 public class ReferenceCountingGC {
 
     public Object instance = null;
